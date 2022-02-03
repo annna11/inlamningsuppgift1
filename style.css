@@ -9,10 +9,24 @@
 div {
     border-radius: 5px;
   }
-  
+ /* i've added these font-sizes for the responsive design*/
+p{
+    font-size: 18px;
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+    font-size: 26px;
+    }
+h4 {
+  font-size: 24px;
+}
+
+   /* I've made the background color slightly darker for a WCAG AAA level contrast*/
 .topnav {
     overflow: hidden;
-    background-color: #AC3B61;   
+    background-color: #90274A;   
 }
 
 .categories {
@@ -26,11 +40,11 @@ div {
 .topnav a {
     float: left;
     color:white;
-    background-color: #AC3B61;
+    background-color: #90274A;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 19px;
 }
 .topnav a:hover {
     background-color: #123C69;
@@ -39,8 +53,6 @@ div {
 .site {
   margin-top: 5px;
   margin-left: 40px;
-  width: 700px;
-  height: 1000px;
 }
 
 
@@ -67,3 +79,18 @@ ul.bullet {
 .column2{
   text-align: center;
 }
+ /* this is for the responsive design - the fonts change 2px smaller if the width is smaller than 500px */
+@media (max-width:500px) {
+  p{
+    font-size: 14px;
+}
+h1 {
+  font-size: 30px;
+}
+h2 {
+    font-size: 22px;
+    }
+h4 {
+  font-size: 20px;
+}
+}   
